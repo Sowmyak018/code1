@@ -27,7 +27,7 @@ app.post('/api/messages', async (req, res) => {
   const { date, time, message } = req.body;
 
   let connection;
-
+  }
   try {
     connection = await oracledb.getConnection(dbConfig);
 
